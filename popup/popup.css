@@ -1,0 +1,24 @@
+/* Add this to styles.css to apply the font */
+body {
+    font-family: 'YourChosenFont', sans-serif;
+}
+
+#timer-container {
+text-align: center;
+}
+
+#flower {
+width: 100px;
+height: 100px;
+background-size: cover;
+}
+
+#timer {
+font-size: 18px;
+margin-top: 10px;
+}
+
+#start-btn {
+margin-top: 20px;
+padding: 10px;
+}

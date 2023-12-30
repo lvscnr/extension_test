@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Stay Productive",
+    "version": "1.0",
+    "description": "Helps you focus and get things done!",
+    "permissions": ["activeTab", "storage"],
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default_icon":{
+            "16": "logo.png",
+            "48": "logo.png",
+            "128": "logo.png"
+        }
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "icons":{
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    }
+    
+}
+
